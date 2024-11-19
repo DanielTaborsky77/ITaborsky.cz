@@ -1,0 +1,54 @@
+.Services {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 110px;
+}
+.Services-Title {
+    color: #000000;
+    font-family: "Bold";
+    font-size: 30px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+.Services-cards {
+    margin-top: 75px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 2250px){
+    .Services-cards {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 1950px) {
+    .Services {
+        padding-top: 75px;
+    }
+    .Services-cards {
+        width: 80%;
+        
+    }
+    .Services-Title {
+        font-size: 25px;
+        margin-bottom: 75px;
+    }
+}
+@media only screen and (max-width: 1460px){
+    .Services-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        
+    }
+    .Services-Title {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+}

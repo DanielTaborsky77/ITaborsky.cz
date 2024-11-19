@@ -1,0 +1,337 @@
+.Homepage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    background: url(../Assets/homepage.jpg) no-repeat center 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Image + titles*/
+.Homepage-Photo-Titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 125px;
+}
+.Me-Photo {
+    width: 325px;
+    margin-bottom: 60px;
+}
+.Homepage-Title-1 {
+    font-family: Regular;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+.Homepage-Title-2 {
+    font-family: Bold;
+    font-size: 30px;
+    color: white;
+}
+.Homepage-Title-1-Responzive {
+    display: none;
+}
+.Homepage-Title-2-Responzive {
+    display: none;
+}
+
+/*Buttons*/
+.Homepage-Buttons-Responzive{
+    display: none;
+}
+.Homepage-Buttons {
+    z-index: 1;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.Homepage-Buttons a{
+    padding: 10px;
+    text-decoration: none;
+}
+.Homepage-Buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01213A;
+    color: #ffffff;
+    border: none;
+    font-family: Regular;
+    font-size: 25px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Homepage-Buttons button img {
+    margin-right: 25px;
+    height: 30px;
+}
+.Homepage-Buttons button:hover{
+    transform: scale(1.1);
+}
+.Homepage-Buttons {
+    z-index: 1;
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.Homepage-Buttons a{
+    padding: 10px;
+    text-decoration: none;
+}
+.Homepage-Buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: none;
+    font-family: Regular;
+    font-size: 25px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.Homepage-Buttons button img {
+    margin-right: 25px;
+    height: 30px;
+}
+.Homepage-Buttons button:hover{
+    transform: scale(1.1);
+}
+
+/*Socials*/
+.Homepage-Socials {
+    z-index: 1;
+    width: 275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* @media only screen and (min-height: 1500px) {
+    .Homepage{
+        min-height: auto;
+    }
+} */
+@media only screen and (max-width: 1950px) and (max-height: 950px){
+    .Homepage-Photo-Titles {
+        margin-bottom: 50px;
+    }
+    .Me-Photo {
+        width: 275px;
+        margin-bottom: 50px;
+    }
+    .Homepage-Title-1 {
+        font-family: Regular;
+        font-size: 28px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .Homepage-Title-2 {
+        font-family: Bold;
+        font-size: 28px;
+        color: white;
+    }
+    .Homepage-Buttons {
+        margin-bottom: 75px;
+        width: 700px;
+    }
+    .Homepage-Buttons button{
+        font-size: 21px;
+        font-family: Bold;
+    }
+    .Homepage-Buttons button img {
+        margin-right: 25px;
+        height: 25px;
+    }
+    .Homepage-Socials {
+        width: 200px;
+    }
+    .Homepage-Socials img {
+        height: 50px;
+    }
+}
+@media only screen and (max-width: 1550px) and (max-height: 800px){
+    .Homepage-Photo-Titles {
+        margin-bottom: 40px;
+    }
+    .Me-Photo {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .Homepage-Title-1 {
+        font-family: Regular;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .Homepage-Title-2 {
+        font-family: Bold;
+        font-size: 25px;
+        color: white;
+    }
+    .Homepage-Buttons {
+        margin-bottom: 75px;
+        width: 700px;
+    }
+    .Homepage-Buttons button{
+        font-size: 21px;
+    }
+    .Homepage-Buttons button img {
+        margin-right: 25px;
+        height: 25px;
+    }
+    .Homepage-Socials {
+        width: 150px;
+    }
+    .Homepage-Socials img {
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .Homepage-Buttons {
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Homepage-Title-1 {
+        font-size: 30px;
+    }
+    .Homepage-Title-2 {
+        font-size: 30px;
+    }
+    .Homepage-Buttons {
+        display: none;
+    }
+    .Homepage-Buttons-Responzive{
+        display: none;
+        z-index: 1;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .Homepage-Buttons-Responzive a{
+        padding: 10px;
+        text-decoration: none;
+    }
+    .Homepage-Buttons-Responzive button{
+        background-color: #01213A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        border: none;
+        font-family: Regular;
+        font-size: 25px;
+        width: 70px;
+        padding: 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+    .Homepage-Buttons-Responzive button img {
+        height: 40px;
+    }
+    .Homepage-Buttons-Responzive button:hover{
+        transform: scale(1.1);
+    }
+    /*Socials*/
+    .Homepage-Socials img{
+        height: 55px;
+    }
+    .Homepage-Socials {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+@media only screen and (max-width: 550px) {
+    .Me-Photo {
+        width: 300px;
+        margin-bottom: 60px;
+    }
+    .Homepage-Photo-Titles {
+        margin-bottom: 50px;
+    }
+    .Homepage-Title-1 {
+        display: none;
+    }
+    .Homepage-Title-2 {
+        display: none;
+    }
+    .Homepage-Title-1-Responzive {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Regular";
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .Homepage-Title-1-Responzive-Name {
+        font-family: "Bold";
+    }
+    .Homepage-Title-2-Responzive {
+        display: flex;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Bold";
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .Me-Photo {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    .Homepage-Photo-Titles {
+        margin-bottom: 30px;
+    }
+    .Homepage-Title-1-Responzive {
+        font-size: 6.5vw;
+    }
+    .Homepage-Title-2-Responzive {
+        font-size: 6.5vw;
+    }
+    .Homepage-Buttons-Responzive{
+        width: 275px;
+    }
+    .Homepage-Buttons-Responzive button{
+        width: 60px;
+    }
+    .Homepage-Buttons-Responzive button img {
+        height: 30px;
+    }
+    .Homepage-Socials img{
+        height: 45px;
+    }
+    .Homepage-Socials {
+        width: 175px;
+    }
+    .Homepage-Buttons-Responzive{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Me-Photo {
+        width: 215px;
+    }
+    .Homepage-Buttons-Responzive button{
+        width: 60px;
+    }
+    .Homepage-Buttons-Responzive button img {
+        height: 30px;
+    }
+}

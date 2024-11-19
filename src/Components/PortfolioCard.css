@@ -1,0 +1,325 @@
+.PortfolioCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 70px;
+    width: 425px;
+    height: 525px;
+    background-color: #074066d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 'all 0.5s ease'
+}
+.PortfolioCard-Detail {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Tento transform zůstává pro vycentrování */
+    width: 1250px;
+    min-height: auto;
+    z-index: 2;
+    background-color: #074066;
+    padding: 50px 75px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.PortfolioCard-Detail-Close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.PortfolioCard-Detail-Top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    height: 100px;
+}
+
+.PortfolioCard-Detail-Title{
+    font-family: "Bold";
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 25px;
+}
+.PortfolioCard-Detail-Lang {
+    display: flex;
+    align-items: center;
+}
+.PortfolioCard-Detail-Paragraphs {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.PortfolioCard-Detail-Paragraph {
+    font-size: 23px;
+    font-family: 'Light';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+.PortfolioCard-Detail-Butts {
+    display: flex;
+    justify-content: end;
+}
+.PortfolioCard-Detail-Butts a{
+    text-decoration: none;
+    padding: 10px;
+}
+.PortfolioCard:hover {
+    transform: scale(0.95);
+}
+.PortfolioCard-Container-Image {
+    width: 90px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PortfolioCard-Title {
+    margin-top: 15px;
+    font-family: 'Bold';
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.PortfolioCard-Description {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Regular';
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: center;
+}
+.PortfolioCard-a-Web {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.PortfolioCard-a-Git {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.PortfolioCard-Web {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    width: 115px;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #0B8BC9;
+    color: #FFFFFF;
+    font-family: 'Regular';
+    transition: transform 0.3s ease-in-out;
+}
+.PortfolioCard-Web:hover {
+    transform: scale(1.1);
+}
+.PortfolioCard-Web-Img {
+    width: 38px;
+    margin-right: 5px;
+}
+
+.PortfolioCard-Git {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    width: 140px;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background-color: #07031A;
+    color: #FFFFFF;
+    font-family: 'Regular';
+    transition: transform 0.3s ease-in-out;
+}
+.PortfolioCard-Git:hover {
+    transform: scale(1.1);
+}
+.PortfolioCard-Git-Img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1950px){
+    .PortfolioCard {
+        padding: 20px 60px;
+        width: 350px;
+        height: 450px;
+    }
+    .PortfolioCard-Container-Image {
+        width: 75px;
+        height: 85px;
+    }
+    .PortfolioCard-Title {
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    .PortfolioCard-Lang-Img {
+        height: 25px;
+    }
+    .PortfolioCard-Description {
+        margin-top: 30px;
+        margin-bottom: 25px;
+        font-family: 'Regular';
+        color: #FFFFFF;
+        font-size: 20px;
+        text-align: center;
+    }
+    .PortfolioCard-Web {
+        font-size: 20px;
+        padding: 3px;
+    }
+    .PortfolioCard-Git {
+        font-size: 20px;
+        padding: 6px;
+    }
+    .PortfolioCard-Detail {
+        width: 1000px;
+        height: auto;
+        padding: 50px 50px;
+    }
+    .PortfolioCard-Detail-Top .PortfolioCard-Image {
+        transform: scale(0.9);
+    }
+    .PortfolioCard-Detail h2{
+        color: #FFFFFF;
+        font-size: 25px;
+        margin-left: 25px;
+    }
+    .PortfolioCard-Detail-Paragraphs {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .PortfolioCard-Detail-Paragraph {
+        font-size: 18px;
+        font-family: 'Light';
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: #FFFFFF;
+    }
+
+}
+@media only screen and (max-width: 1400px) {
+    .PortfolioCard-Detail {
+        height: 100%;
+        border-radius: 0px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 900px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .PortfolioCard-Detail {
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .PortfolioCard-Detail {
+        width: 650px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .PortfolioCard-Detail {
+        width: 550px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .PortfolioCard {
+        padding: 20px 40px;
+        width: 400px;
+        height: 500px;
+    }
+    .PortfolioCard-Container-Image {
+        width: 75px;
+        height: 85px;
+    }
+    .PortfolioCard-Title {
+        margin-top: 15px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .PortfolioCard-Description {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: 'Regular';
+        color: #FFFFFF;
+        font-size: 22px;
+        text-align: center;
+    }
+    .PortfolioCard-Detail {
+        width: 500px;
+        padding: 50px 50px;
+    }
+    .PortfolioCard-Detail-Top {
+        flex-direction: column;
+        min-height: 125px;
+    }
+    .PortfolioCard-Detail-Title{
+
+        margin-left: 0px;
+        
+    }
+    .PortfolioCard-Detail-Paragraphs {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .PortfolioCard-Detail-Paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .PortfolioCard-Detail-Butts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .PortfolioCard-Detail-Title {
+        font-size: 28px;
+    }
+    .PortfolioCard-Detail {
+        height: 100%;
+        border-radius: 0px;
+        display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .PortfolioCard-Detail-Paragraph {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .PortfolioCard {
+        width: 325px;
+    }
+}

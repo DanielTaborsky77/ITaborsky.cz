@@ -1,0 +1,309 @@
+.Services-Details-Left-Oriented {
+    width: 70%;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Services-Details-Right-Oriented {
+    width: 70%;
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.Services-Details-Left-Name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.Services-Details-Left-Name img{
+    height: 40px;
+}
+.Services-Details-Left-Title {
+    font-size: 30px;
+    font-family: "Bold";
+    color: #07031A;
+    margin-left: 20px;
+}
+.Services-Details-Left-Paragraphs {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 35px;
+}
+.Services-Details-Left-Paragraph {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-family: 'Regular';
+}
+.Services-Details-Left-Demand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Services-Details-Left-Button {
+    font-family: 'Regular';
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #07031A;
+    padding-right: 20px;
+    cursor: pointer; /* přidáme, aby se zobrazila ruka při najetí na tlačítko */
+    transition: transform 0.3s ease; /* přidáme přechod pro hladký efekt */
+    overflow: hidden;
+}
+.Services-Details-Left-Button img {
+    display: block;
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.8s ease; /* přidáme přechod pro hladký efekt */
+}
+.Services-Details-Left-Button:hover img {
+    transform: rotate(180deg); /* otočí obrázek o 180° při hoveru */
+}
+.Services-Details-Left-Button:hover{
+    transform: translate(5%);
+}
+.Services-Details-Left-Full-Stack {
+    margin-top: 10px;
+    font-family: 'Regular';
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #0B8BC9;
+    padding-right: 20px;
+    cursor: pointer; /* přidáme, aby se zobrazila ruka při najetí na tlačítko */
+    transition: transform 0.3s ease; /* přidáme přechod pro hladký efekt */
+    overflow: hidden;
+}
+.Services-Details-Left-Full-Stack img {
+    display: block;
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.8s ease; /* přidáme přechod pro hladký efekt */
+}
+.Services-Details-Left-Full-Stack:hover{
+    transform: translate(5%);
+}
+/*Right side*/
+.Services-Details-Right {
+    width: 750px;
+    padding: 70px 50px;
+}
+.Services-Details-Right-Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Services-Details-Right-Name img{
+    height: 45px;
+}
+.Services-Details-Right-Title {
+    font-size: 30px;
+    font-family: "Bold";
+    color: #ffffff;
+    margin-left: 20px;
+}
+.Services-Details-Right-Paragraph {
+    margin-top: 35px;
+}
+.Services-Details-Right-Paragraph-Title {
+    display: flex;
+    align-items: center;
+}
+.Services-Details-Right-Paragraph-Title img {
+    height: 30px;
+}
+.Services-Details-Right-Paragraph-Title p {
+    font-family: "Bold";
+    color: #FFFFFF;
+    font-size: 23px;
+    margin-left: 10px;
+}
+.Services-Details-Right-Subtitles {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.Services-Details-Right-Subtitle {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
+.Services-Details-Right-Subtitle img {
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.Services-Details-Right-Subtitle p {
+    color: #FFFFFF;
+    font-family: 'Regular';
+    font-size: 21px;
+    margin-left: 20px;
+}
+.Services-Details-Right-Paragraph-Content {
+    margin-top: 18px;
+    font-family: 'Light';
+    color: #FFFFFF;
+    font-size: 21px;
+}
+@media only screen and (max-width: 2200px) {
+    .Services-Details-Left-Oriented {
+        width: 80%;
+    }
+    .Services-Details-Right-Oriented {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1950px) {
+    .Services-Details-Left-Oriented {
+        width: 80%;
+        padding-top: 100px;
+    }
+    .Services-Details-Right-Oriented {
+        width: 80%;
+        padding-top: 100px;
+    }
+    .Services-Details-Left-Name img{
+        height: 35px;
+    }
+    .Services-Details-Left-Title {
+        font-size: 25px;
+    }
+    .Services-Details-Left-Paragraphs {
+        max-width: 650px;
+    }
+    .Services-Details-Left-Paragraph {
+        font-size: 20px;
+    }
+    .Services-Details-Left-Button {
+        font-size: 18px;
+    }
+    .Services-Details-Left-Full-Stack {
+        font-size: 18px;
+    }
+    /*Right side*/
+    .Services-Details-Right {
+        width: 600px;
+        padding: 50px 55px;
+    }
+    .Services-Details-Right-Name img{
+        height: 35px;
+    }
+    .Services-Details-Right-Title {
+        font-size: 25px;
+    }
+    .Services-Details-Right-Paragraph-Title img {
+        height: 27px;
+    }
+    .Services-Details-Right-Paragraph-Title p {
+        font-size: 20px;
+    }
+    .Services-Details-Right-Subtitle img {
+        height: 20px;
+    }
+    .Services-Details-Right-Subtitle p {
+        font-size: 18px;
+    }
+    .Services-Details-Right-Paragraph {
+        margin-top: 25px;
+    }
+    .Services-Details-Right-Paragraph-Content {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .Services-Details-Left-Oriented {
+        width: 90%;
+    }
+    .Services-Details-Right-Oriented {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1460px) {
+    .Services-Details-Left-Oriented {
+        width: 100%;
+        padding-top: 100px;
+        flex-direction: column;
+    }
+    .Services-Details-Right-Oriented {
+        width: 100%;
+        padding-top: 100px;
+        flex-direction: column;
+    }
+    .Services-Details-Left {
+        padding: 0px;
+    }
+    .Services-Details-Left-Name {
+        justify-content: center;
+    }
+    .Services-Details-Left-Paragraphs {
+        display: block;
+        width: 700px;
+        margin-bottom: 35px;
+    }
+    .Services-Details-Left-Demand {
+        margin-bottom: 40px;
+    }
+    .Services-Details-Right {
+        width: 700px;
+        background-color: #0B8BC9;
+        padding: 70px 50px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Services-Details-Left-Paragraphs {
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    .Services-Details-Right {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Services-Details-Left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Services-Details-Left-Demand {
+        width: 85%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .Services-Details-Left-Name {
+        margin-bottom: 20px;
+    }
+    .Services-Details-Left-Paragraphs {
+        width: 85%;
+    }
+    .Services-Details-Right {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .Services-Details-Right {
+        margin-top: 25px;
+        width: 100%;
+        background-color: #0B8BC9;
+        padding: 50px 30px;
+    }
+}

@@ -1,0 +1,154 @@
+.Full-Stack {
+    padding-top: 150px;
+}
+.Full-Stack-Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.Full-Stack-Title img{
+    height: 40px;
+}
+.Full-Stack-Title p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bold';
+    margin-left: 20px;
+}
+.Full-Stack-Subtitle {
+    font-family: 'Regular';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.Full-Stack-Scheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Full-Stack-Scheme-part {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Full-Stack-Scheme-part img {
+    height: 50px;
+}
+.Full-Stack-Arrow-Down {
+    display: none;
+}
+.Full-Stack-Scheme-part p {
+    font-family: 'Bold';
+    font-size: 23px;
+    margin-top: 20px;
+}
+.Full-Stack-Buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.Full-Stack-Buttons a{
+    padding: 10px;
+}
+.Full-Stack-Buttons-Demand {
+    background-color: #0B8BC9;
+    color: #FFFFFF;
+    font-family: "Bold";
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 8px 30px;
+    border-radius: 100px;
+    border: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Full-Stack-Buttons-Demand:hover {
+    transform: scale(1.05);
+}
+.Full-Stack-Buttons-Process {
+    background-color: #07031A;
+    color: #FFFFFF;
+    font-family: "Bold";
+    font-size: 20px;
+    padding: 8px 30px;
+    border-radius: 100px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.Full-Stack-Buttons-Process:hover {
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 1950px) {
+    .Full-Stack {
+        padding-top: 150px;
+        margin-bottom: 50px;
+    }
+    .Full-Stack-Title img{
+        height: 35px;
+    }
+    .Full-Stack-Title p{
+        font-size: 25px;
+    }
+    .Full-Stack-Subtitle{
+        font-size: 20px;
+    }
+    .Full-Stack-Scheme-part img {
+        height: 40px;
+    }
+    .Full-Stack-Scheme-part p {
+        font-size: 20px;
+    }
+    .Full-Stack-Buttons-Demand {
+        font-size: 18px;
+    }
+    .Full-Stack-Buttons-Process {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1460px){
+    .Full-Stack {
+        padding-top: 100px;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .Full-Stack {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Full-Stack-Subtitle {
+        width: 90%;
+        margin-bottom: 0px;
+    }
+    .Full-Stack-Scheme {
+        margin-top: 35px;
+        flex-direction: column;
+    }
+    .Full-Stack-Arrow {
+        display: none;
+    }
+    .Full-Stack-Arrow-Down {
+        display: flex;
+    }
+    .Full-Stack-Scheme-part {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .Full-Stack-Scheme-part p {
+        margin-top: 10px;
+    }
+    .Full-Stack-Buttons {
+        padding-top: 35px;
+    }
+}

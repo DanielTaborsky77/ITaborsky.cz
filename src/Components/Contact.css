@@ -1,0 +1,119 @@
+.Contact{
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 110px;
+}
+.Contact-Title {
+    font-family: 'Bold';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+.Contact-Card {
+    padding: 80px 80px;
+    display: flex;
+    background-color: #07031A;
+    justify-content: space-between;
+    width: 1000px;
+}
+.Contact-Card-Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Contact-Card-Left-Top {
+    margin-bottom: 50px;
+}
+.Contact-Card-Title {
+    font-family: 'Bold';
+    font-size: 35px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.Contact-Card-Subtitle {
+    font-family: 'Regular';
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.Contact-Card-Bottom {
+
+}
+.Contact-Card-Info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.Contact-Card-Info img {
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 30px;
+    margin-right: 20px;
+}
+.Contact-Card-Info p {
+    font-family: 'Light';
+    font-size: 23px;
+    color: #FFFFFF;
+}
+.Contact-Card-Right img {
+    height: 300px;
+}
+@media only screen and (max-width: 1950px) {
+    .Contact{
+        padding-top: 100px;
+    }
+    .Contact-Title {
+        font-size: 25px;
+        margin-bottom: 100px;
+    }
+    .Contact-Card {
+        width: 850px;
+    }
+    .Contact-Card-Left-Top {
+        margin-bottom: 50px;
+    }
+    .Contact-Card-Title {
+        font-size: 30px;
+    }
+    .Contact-Card-Subtitle {
+        font-size: 25px;
+    }
+    .Contact-Card-Info {
+        margin-top: 25px;
+    }
+    .Contact-Card-Info img {
+        width: 25px;
+    }
+    .Contact-Card-Info p {
+        font-size: 20px;
+    }
+    .Contact-Card-Right img {
+        height: 280x;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .Contact{
+        padding-top: 75px;
+        margin-bottom: 0px;
+    }
+    .Contact-Title {
+        margin-bottom: 50px;
+    }
+    .Contact-Card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 80px 30px;
+    }
+    .Contact-Card-Left-Top {
+        margin-bottom: 25px;
+    }
+    .Contact-Card-Left {
+        margin-bottom: 50px;
+    }
+    .Contact-Card-Info p {
+        width: 100%;
+    }
+}

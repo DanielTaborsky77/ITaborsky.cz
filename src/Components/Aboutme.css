@@ -1,0 +1,233 @@
+.Aboutme {
+    width: 100%;
+    height: auto;
+    background-color: #010103;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*Title*/
+.Aboutme-Title {
+    margin-top: 110px;
+    display: block;
+    position: absolute;
+    font-family: bold;
+    color: #ffffff;
+    font-size: 30px;
+}
+/*Content*/
+.Aboutme-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Left side*/
+.Aboutme-Left {
+    width: 1000px;
+    margin-left: 112px;
+}
+.Aboutme-Paragraph {
+    color: #ffffff;
+    font-family: 'Light';
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+/*Right side*/
+.Aboutme-Right {
+    padding: 200px;
+    width: 1000px;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50000px 0px 0px 50000px;
+}
+.Aboutme-Photo {
+    width: 400px;
+    margin-bottom: 100px;
+}
+.Aboutme-Right a {
+    text-decoration: none;
+}
+.Aboutme-Portfolio-Button img{
+    margin-right: 25px;
+    height: 30px;
+}
+.Aboutme-Portfolio-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background-color: #3098C5;
+    color: #ffffff;
+    font-family: 'Bold';
+    padding: 10px;
+    font-size: 21px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Aboutme-Portfolio-Button:hover {
+    transform: scale(1.1);
+}
+.Aboutme-Services-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    background-color: #031F39;
+    color: #ffffff;
+    font-family: 'Bold';
+    padding: 10px;
+    font-size: 21px;
+    width: 200px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Aboutme-Services-Button img {
+    margin-right: 25px;
+    height: 30px;
+}
+.Aboutme-Services-Button:hover {
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 1950px){
+    .Aboutme-Title {
+        font-size: 25px;
+    }
+    .Aboutme-Left {
+        width: 700px;
+        margin-left: 60px;
+    }
+    .Aboutme-Paragraph {
+        font-size: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    .Aboutme-Right {
+        width: 650px;
+    }
+    .Aboutme-Photo {
+        width: 300px;
+        margin-bottom: 80px;
+    }
+    .Aboutme-Portfolio-Button {
+        width: 180px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .Aboutme-Services-Button {
+        width: 180px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1600px){
+    .Aboutme-Title {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    .Aboutme-Left {
+        width: 700px;
+        margin-left: 60px;
+    }
+    .Aboutme-Paragraph {
+        font-size: 20px;
+    }
+    .Aboutme-Right {
+        width: 650px;
+    }
+    .Aboutme-Photo {
+        width: 300px;
+        margin-bottom: 80px;
+    }
+    .Aboutme-Portfolio-Button {
+        width: 180px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .Aboutme-Services-Button {
+        width: 180px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 2150px) {
+    .Aboutme-Right {
+        width: 40%; 
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .Aboutme-Left {
+        width: 650px;
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .Aboutme-content {
+        flex-direction: column;
+    }
+    .Aboutme-Title {
+        position: relative;
+        top: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .Aboutme-Left {
+        width: 800px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .Aboutme-Right {
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+        padding: 100px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .Aboutme-Left {
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Aboutme-Left {
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .Aboutme-Left {
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Aboutme-Left {
+        width: 85%;
+    }
+    .Aboutme-Paragraph {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .Aboutme-Photo {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .Aboutme-Portfolio-Button {
+        margin-bottom: 25px
+    }
+}

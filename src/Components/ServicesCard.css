@@ -1,0 +1,110 @@
+.ServicesCard {
+    width: 430px;
+    min-height: 400px;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Full-Stack-Card {
+    width: 500px;
+}
+.ServicesCard img {
+    height: 45px;
+    margin-bottom: 20px;
+    transition: all 0.8 ease;
+}
+.ServicesCard-Title {
+    font-family: 'Bold';
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.ServicesCard-Subtitle{
+    text-align: center;
+    font-family: "Light";
+    font-size: 23px;
+    color: #FFFFFF;
+    height: 60px;
+}
+.ServicesCard-Button {
+    margin-top: 50px;
+    width: 225px;
+    font-size: 20px;
+    font-family: 'Regular';
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+.ServicesCard-Button:hover {
+    transform: scale(1.1);
+}
+.ServicesCard-Link {
+    margin-top: 10px;
+    font-family: 'Regular';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 1950px) {
+    .ServicesCard {
+        width: 350px;
+        min-height: 350px;
+        padding: 30px 50px;
+    }
+    .ServicesCard img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .ServicesCard-Title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .ServicesCard-Subtitle {
+        font-size: 20px;
+    }
+    .ServicesCard-Button {
+        margin-top: 20px;
+        padding: 7px;
+        width: 175px;
+        font-size: 18px;
+    }
+    .ServicesCard-Link {
+        margin-top: 5px;
+        font-family: 'Regular';
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
+@media only screen and (max-width: 1460px){
+    .ServicesCard {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .ServicesCard {
+        width: 99%;
+        height: auto;
+    }
+    .ServicesCard-Title {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .ServicesCard-Button {
+        margin-top: 20px;
+        width: 200px;
+        font-size: 20px;
+        font-family: 'Regular';
+    }
+}
+@media only screen and (max-width: 450px) {
+    .ServicesCard {
+        height: auto;
+        padding: 50px 30px;
+    }
+}
