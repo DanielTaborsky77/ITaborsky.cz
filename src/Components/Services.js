@@ -6,7 +6,9 @@ import ServicesCard from './ServicesCard';
 import FullStack from './Fullstack';
 import Demand from './Demand';
 import ServicesDetails from './ServicesDetails';
-
+import Logo from '../Assets/logo.png'
+import Tick from '../Assets/tick.png'
+import Redcross from '../Assets/redcross.png'
 
 import WFullStack from '../Assets/fullstack.png'
 import Wdesign from '../Assets/wdesign.png';
@@ -25,6 +27,8 @@ import WhiteGear from '../Assets/whitegear.png';
 const Services = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedTitle, setSelectedTitle] = useState('');
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
+    const [showErrorModal, setShowErrorModal] = useState(false);
 
     const handleButtonClick = (title) => {
         setSelectedTitle(title);
@@ -33,6 +37,17 @@ const Services = () => {
 
     const closeModal = () => {
         setIsModalOpen(false);
+    };
+
+    const handleSuccess = (success) => {
+        if (success) {
+            setShowSuccessModal(true);
+            setTimeout(() => setShowSuccessModal(false), 10000); // Zavření po 7 sekundách
+        }
+        else {
+            setShowErrorModal(true);
+            setTimeout(() => setShowErrorModal(false), 10000); // Zavření po 7 sekundách
+        }
     };
 
     return(
@@ -59,7 +74,7 @@ const Services = () => {
                     handleButtonClick={handleButtonClick}
                     Link={'#UI/UX'}
                 />
-                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} />}
+                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} onSuccess={handleSuccess}/>}
                  <ServicesCard 
                     Image={CodeService}
                     Color={'#031F39'}
@@ -70,7 +85,7 @@ const Services = () => {
                     handleButtonClick={handleButtonClick}
                     Link={'#Web&Apps'}
                 />
-                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} />}
+                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} onSuccess={handleSuccess}/>}
                 <ServicesCard 
                     Image={Management}
                     Color={'#07031A'}
@@ -81,8 +96,22 @@ const Services = () => {
                     handleButtonClick={handleButtonClick}
                     Link={'#Web-management'}
                 />
-                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} />}
+                {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} onSuccess={handleSuccess}/>}
             </div>
+            {showSuccessModal && (
+                <div className="Modal">
+                    <img className='Modal-Logo' src={Logo} alt="" />
+                    <p>Vaše poptávka byla úspěšně odeslána</p>
+                    <img className='Success-Modal-Tick' src={Tick} alt="" />
+                </div>
+            )}
+            {showErrorModal && (
+                <div className="Modal">
+                    <img className='Modal-Logo' src={Logo} alt="" />
+                    <p>Nastala chyba v odesílání</p>
+                    <img className='Error-Modal-Cross' src={Redcross} alt="" />
+                </div>
+            )}
             <FullStack 
                 handleButtonClick={handleButtonClick}
                 Title={'FULL-STACK'}

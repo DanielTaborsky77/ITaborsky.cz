@@ -8,12 +8,15 @@ import SimpleParticles from './SimpleParticles';
 import MeIcon2 from '../Assets/meicon2.png';
 import Work from '../Assets/work.png';
 import CodeService from '../Assets/codeservice.png';
-import { Background } from 'tsparticles-engine';
+import Logo from '../Assets/logo.png';
 
 const Homepage = () => {
     return (
         <div className="Homepage" id='Homepage'>
             <SimpleParticles />
+            <div className='Homepage-Logo'>
+                <img src={Logo} alt="" />
+            </div>
             <div className='Homepage-Photo-Titles'>
                 <img className="Me-Photo" src={Me} alt="" />
                 <p className='Homepage-Title-1'>Dobrý den, jmenuji se Daniel Táborský</p>

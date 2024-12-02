@@ -1,3 +1,57 @@
+.Modal {
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    width: 600px;
+    height: 250px;
+    transform: translateX(-50%);
+    background: #07031A;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    animation: slideInOut 7s ease-in-out forwards;
+}
+
+/* Definice animace pro vyjíždění a zmizení */
+@keyframes slideInOut {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    20% {
+        top: 50px;
+        opacity: 1;
+    }
+    80% {
+        top: 50px;
+        opacity: 1;
+    }
+    100% {
+        top: -300px;
+        opacity: 0;
+    }
+}
+.Modal-Logo {
+    width: 200px;
+}
+.Modal p {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-family: 'Light';
+    font-size: 25px;
+}
+.Success-Modal-Tick {
+    width: 50px;
+}
+.Error-Modal-Cross {
+    width: 50px;
+}
 .Services {
     width: 100%;
     height: auto;
@@ -39,6 +93,23 @@
         font-size: 25px;
         margin-bottom: 75px;
     }
+    .Modal {
+        width: 500px;
+        height: 225px;
+    }
+    .Modal-Logo {
+        width: 175px;
+    }
+    .Modal p {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    .Success-Modal-Tick {
+        width: 40px;
+    }
+    .Error-Modal-Cross {
+        width: 40px;
+    }
 }
 @media only screen and (max-width: 1460px){
     .Services-cards {
@@ -50,5 +121,17 @@
     .Services-Title {
         font-size: 25px;
         margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .Modal {
+        width: 375px;
+        height: 200px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 375px){
+    .Modal {
+        width: 100%;
     }
 }

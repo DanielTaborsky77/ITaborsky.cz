@@ -30,6 +30,7 @@
 
 @media only screen and (max-width: 1950px){
     .Portfolio {
+        padding-top: 50px;
         padding-bottom: 100px;
     }
     .Portfolio-Title {

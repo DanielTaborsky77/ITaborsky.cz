@@ -1,3 +1,52 @@
+/* Rozmazání pozadí */
+.Demand-Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.Demand-Overlay.blurred {
+  backdrop-filter: blur(5px);
+}
+
+/* Načítací kolečko */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  z-index: 1000;
+}
+
+/* Animace pro načítací kolečko */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Tlačítko odeslání */
+.Demand-Submit-Button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Demand-Submit-Button:hover {
+  background-color: #217dbb;
+}
+
 .Demand-Overlay {
     position: fixed;
     top: 0;
@@ -121,6 +170,12 @@
   }
   .Demand-Submit-Button:hover {
     transform: scale(1.05);
+  }
+  .error {
+    font-family: "Light";
+    font-size: 15px;
+    color: rgb(175, 1, 1);
+    padding-top: 5px;
   }
 @media only screen and (max-height: 1050px) {
   .Demand-Form {

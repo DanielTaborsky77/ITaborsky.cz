@@ -18,15 +18,15 @@ const Contact = () => {
                     <div className='Contact-Card-Bottom'>
                         <div className='Contact-Card-Info'>
                             <img src={Phone} alt="" />
-                            <p>+420 731 124 827</p>
+                            <a href="tel:+420731124827">+420 731 124 827</a>
                         </div>
                         <div className='Contact-Card-Info'>
                             <img src={Mail} alt="" />
-                            <p>Daniel-taborsky77@seznam.cz</p>
+                            <a href="mailto:taborsky@itaborsky.cz">Taborsky@ITaborsky.cz</a>
                         </div>
                         <div className='Contact-Card-Info'>
                             <img src={MyWeb} alt="" />
-                            <p>Webovestranky.cz</p>
+                            <a href='https://www.ITaborsky.cz'>www.ITaborsky.cz</a>
                         </div>
                     </div>
                 </div>

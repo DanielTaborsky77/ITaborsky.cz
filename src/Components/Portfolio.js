@@ -3,7 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 
 import Rideaway from "../Assets/rideaway.png";
 import Carentab from "../Assets/carentab.png";
-import Cross from "../Assets/cross.png";
+import Icon from "../Assets/icon.png";
 
 const Portfolio = () => {
     return(
@@ -40,13 +40,15 @@ const Portfolio = () => {
                 />
                 
                 <PortfolioCard 
-                    Img={Cross} 
-                    Title={'Bjbas.cz'} 
-                    Description={'Bratrská jednota Baptistů v Aši'}
-                    Web={''}
-                    Github={''}
+                    Img={Icon} 
+                    Title={'ITaborsky.cz'} 
+                    Description={'Osobní web s portfoliem a nabídkou služeb'}
+                    Web={'https://itaborsky.cz/'}
+                    Github={'https://github.com/DanielTaborsky77/ITaborsky.cz'}
                     Details={[
-                        'Web je stále ve vývoji...', 
+                        'Web je určen pro mou osobní prezentaci a ukázku mého portfolia.', 
+                        'Navíc je zde možnost, poptat nějakou ze služeb, které zákazníkům nabízím. Pokud Vás má práce zaujala, nechybí zde kontaktní údaje pro jakýkoliv dotaz.', 
+                        'Stránka je mimo jiné také responzivní na všechny typy zařízení'
                     ]}
                 />
             </div>

@@ -9,6 +9,7 @@ import BlackManagement from '../Assets/blackmanagement.png';
 const FullStack = (props) => {
     return(
         <div id="FULL-STACK" className='Full-Stack'>
+                
             <div className='Full-Stack-Title'>
                 <img src={BFullStack} alt="" />
                 <p>FULL-STACK</p>
