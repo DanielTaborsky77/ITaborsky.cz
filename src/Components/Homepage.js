@@ -1,43 +1,47 @@
 import './Homepage.css';
-import Me from '../Assets/me2.png';
 import Instagram from '../Assets/instagram.png'
 import Github from '../Assets/github.png'
 import Linkedin from '../Assets/linkedin.png'
-import SimpleParticles from './SimpleParticles';
-
 import MeIcon2 from '../Assets/meicon2.png';
 import Work from '../Assets/work.png';
 import CodeService from '../Assets/codeservice.png';
 import Logo from '../Assets/logo.png';
 
+import { useState } from 'react';
+
 const Homepage = () => {
+    const [loaded, setLoaded] = useState(false);
+
     return (
         <div className="Homepage" id='Homepage'>
-            <SimpleParticles />
+            
             <div className='Homepage-Logo'>
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="Logo" />
             </div>
             <div className='Homepage-Photo-Titles'>
-                <img className="Me-Photo" src={Me} alt="" />
-                <p className='Homepage-Title-1'>Dobrý den, jmenuji se Daniel Táborský</p>
-                <p className='Homepage-Title-2'>FULL-STACK WEBOVÝ VÝVOJÁŘ</p>
-                <p className='Homepage-Title-1-Responzive'>Dobrý den, jmenuji se<br></br><p className='Homepage-Title-1-Responzive-Name'>Daniel Táborský</p></p>
-                <p className='Homepage-Title-2-Responzive'>FULL-STACK<br></br>WEBOVÝ VÝVOJÁŘ</p>
+            <div className="Me-Photo">
+
+            </div>
+                <p className='Homepage-Title-1'>Daniel Táborský</p>
+                <p className='Homepage-Title-2'>WEBOVÉ STRÁNKY A APLIKACE</p>
+                <p className='Homepage-Title-1-Responzive'>Daniel Táborský</p>
+                <p className='Homepage-Title-2-Responzive'>WEBOVÉ STRÁNKY<br></br>A APLIKACE</p>
             </div>
             <div className='Homepage-Buttons'>
-                <a href="#Aboutme"><button><img src={MeIcon2} alt="" /> O mně</button></a>
-                <a href="#Portfolio"><button><img src={Work} alt="" /> Portfolio</button></a>
-                <a href="#Services"><button><img src={CodeService} alt="" /> Služby</button></a>
+                
+                <a href="#Portfolio"><button><img src={Work} alt="My Work"/> Portfolio</button></a>
+                <a href="#Services"><button><img src={CodeService} alt="Services"/> Služby</button></a>
+                <a href="#Aboutme"><button><img src={MeIcon2} alt="About me"/> O mně</button></a>
             </div>
             <div className='Homepage-Buttons-Responzive'>
-                <a href="#Aboutme"><button><img src={MeIcon2} alt="" /></button></a>
-                <a href="#Portfolio"><button><img src={Work} alt="" /></button></a>
-                <a href="#Services"><button><img src={CodeService} alt="" /></button></a>
+                <a href="#Portfolio"><button><img src={Work} alt="My Work"/></button></a>
+                <a href="#Services"><button><img src={CodeService} alt="Services"/></button></a>
+                <a href="#Aboutme"><button><img src={MeIcon2} alt="About me"/></button></a>
             </div>
             <div className='Homepage-Socials'>
-                <a href="https://www.instagram.com/taborskyd/"><img src={Instagram} alt="Instagram" /></a>
+                <a href="https://www.instagram.com/itaborsky.cz/"><img src={Instagram} alt="Instagram" /></a>
                 <a href="https://github.com/DanielTaborsky77"><img src={Github} alt="Github" /></a>
-                <a href="https://www.linkedin.com/in/daniel-t%C3%A1borsk%C3%BD-ab31aa294/"><img src={Linkedin} alt="Linkedin" /></a>
+                <a href="https://www.linkedin.com/in/daniel-t%C3%A1borsk%C3%BD-ab31aa294/"><img src={Linkedin} alt="LinkedIn" /></a>
             </div>
 
         </div>

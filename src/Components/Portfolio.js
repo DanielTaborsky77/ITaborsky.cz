@@ -32,10 +32,10 @@ const Portfolio = () => {
                     Web={'https://carentab.com/'}
                     Github={'https://github.com/DanielTaborsky77/Carentab.com'}
                     Details={[
-                        'Web je vytvořen pro půjčovnu automobilů v Karlovarském Kraji. ', 
+                        'Web je vytvořen pro půjčovnu automobilů CARENTAB v Karlovarském Kraji. ', 
                         'Jeho účelem je zákazníky informovat o společnosti, půjčovaných vozidlech (výbava, cena, vzhled - fotogalerie), a hlavně dát zákazníkovi možnost si vozidlo zarezervovat.',
-                        'Jedná se o jednostránkový web, na kterém jsou použity prvky z React.js, CSS, JS a PHP. Klíčový je již zmíněný PHP formulář pro rezervaci vozidel.',
-                        'Web je plně responzivní na všechny typy zařízení. '
+                        'Jedná se o jednostránkový web, na kterém jsou použity prvky z React.js, CSS, JS a PHP. Klíčový je již zmíněný formulář pro rezervaci vozidel, který zpracovává a odesílá PHP API.',
+                        'Web je plně responzivní na mobilní, desktopové a další zařízení. '
                     ]}
                 />
                 
@@ -47,8 +47,9 @@ const Portfolio = () => {
                     Github={'https://github.com/DanielTaborsky77/ITaborsky.cz'}
                     Details={[
                         'Web je určen pro mou osobní prezentaci a ukázku mého portfolia.', 
-                        'Navíc je zde možnost, poptat nějakou ze služeb, které zákazníkům nabízím. Pokud Vás má práce zaujala, nechybí zde kontaktní údaje pro jakýkoliv dotaz.', 
-                        'Stránka je mimo jiné také responzivní na všechny typy zařízení'
+                        'Stránka navíc obsahuje jednotlivé služby (a jak jednotlivě probíhají), které mohu potencionálním zákazníkům nabídnout. Nechybí možnost si o službu nezávazně zažádat pomocí formuláře, který odesílá e-maily pomocí JS API nahrané ve Firebase functions.',
+                        'Aplikace je postavena na JS Frameworku Node.js a React.js. Prvky HTML a stylování CSS jsou samozřejmostí.', 
+                        'Stránka je mimo jiné také responzivní na všechny typy zařízení.'
                     ]}
                 />
             </div>

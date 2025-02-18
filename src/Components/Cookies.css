@@ -1,0 +1,120 @@
+.Cookies {
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+    background-color: #000000dc;
+    padding: 100px;
+    z-index: 999;
+  }
+  .Cookies-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Cookies-Content-title1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Regular";
+    color: #ffffff;
+  }
+  .Cookies-Content-title2 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: "Regular";
+    color: #ffffff;
+  }
+  .Cookies-Decline {
+    font-size: 22px;
+    font-family: "Regular";
+    margin: 5px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #000000;
+  }
+  .Cookies-Accept {
+    font-size: 22px;
+    font-family: "Bold";
+    margin: 5px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #035799;
+    margin-left: 20px;
+  }
+  
+  .cookie-content button:first-child {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .cookie-content button:last-child {
+    background-color: #f44336;
+    color: white;
+  }
+  @media only screen and (max-width: 1950px){
+    .Cookies {
+        padding: 75px;
+    }
+    .Cookies-Content-title1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      .Cookies-Content-title2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+      .Cookies-Decline {
+        font-size: 18px;
+      }
+      .Cookies-Accept {
+        font-size: 18px;
+      }
+  }
+  @media only screen and (max-width: 900px){
+    .Cookies {
+        padding: 50px;
+    }
+    .Cookies-Content-title1 {
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
+      .Cookies-Content-title2 {
+        font-size: 22px;
+        margin-bottom: 50px;
+      }
+      .Cookies-Butts {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .Cookies-Decline {
+        font-size: 18px;
+        margin: 0;
+      }
+      .Cookies-Accept {
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+  }
+  @media only screen and (max-width: 500px) {
+    .Cookies {
+        bottom: 0;
+        padding: 35px;
+    }
+    .Cookies-Content-title1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .Cookies-Content-title2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+  }
+  

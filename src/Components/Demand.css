@@ -59,8 +59,8 @@
     z-index: 1;
   }
   .Demand-Content {
-    padding: 75px 20px;
-    width: 900px;
+    padding: 30px 20px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,9 +82,9 @@
     color: #000000;
   }
   .Demand-Title {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Bold';
-    margin-bottom: 35px;
+    margin-bottom: 75px;
   }
   .Demand-Duo {
     display: flex;
@@ -177,15 +177,15 @@
     color: rgb(175, 1, 1);
     padding-top: 5px;
   }
-@media only screen and (max-height: 1050px) {
+@media only screen and (max-height: 800px) {
   .Demand-Form {
     width: 700px;
     margin: 0 auto;
   }
   .Demand-Content {
 
-    width: 900px;
-    height: 100%;
+    width: 1000px;
+    height: 750px;
     border-radius: 0px;
     display: Block;
     position: relative;

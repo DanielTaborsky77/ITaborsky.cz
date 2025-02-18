@@ -59,8 +59,8 @@ export const Schema = yup.object().shape({
       .string()
       .required("Pole je povinné")
       .matches(
-        /^[a-zA-Z0-9\s\.\,\-\!\?\'\"\:\(\)]*$/,
-        "Popis nemůže obsahovat tyto speciální znaky."
+        /^[a-zA-Zá-žÁ-Ž0-9\s.,\-!?'"():]*$/,
+        "Popis nemůže obsahovat speciální znaky."
       )
       .max(500, "Popis nesmí být delší než 500 znaků")
   });

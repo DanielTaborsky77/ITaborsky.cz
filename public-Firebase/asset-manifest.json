@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f2697c8e.css",
+    "main.js": "/static/js/main.c50ee069.js",
+    "static/media/me.png": "/static/media/me.75f6bf23780b348dcf1c.png",
+    "static/media/me2.png": "/static/media/me2.256a738b6d16fd599d44.png",
+    "static/media/ITaborsky_FULL-STACK.pdf": "/static/media/ITaborsky_FULL-STACK.dc1b44de2a3542b69d7a.pdf",
+    "static/media/ITaborsky_Weby-a-aplikace.pdf": "/static/media/ITaborsky_Weby-a-aplikace.c3bd6409bf900ed5dd0f.pdf",
+    "static/media/ITaborsky_Webova-Sprava.pdf": "/static/media/ITaborsky_Webova-Sprava.4412befbe02444b3f889.pdf",
+    "static/media/ITaborsky_UI_UX-Design.pdf": "/static/media/ITaborsky_UI_UX-Design.e79e8cc23c69b6f180fe.pdf",
+    "static/media/icon.png": "/static/media/icon.223d75e5a92add7e399c.png",
+    "static/media/BellotaText-Bold.ttf": "/static/media/BellotaText-Bold.ad922308c622eb12c00c.ttf",
+    "static/media/BellotaText-Regular.ttf": "/static/media/BellotaText-Regular.53253e36d93a74b3fd96.ttf",
+    "static/media/BellotaText-Light.ttf": "/static/media/BellotaText-Light.509a4274b5b9b4fea707.ttf",
+    "static/media/rideaway.png": "/static/media/rideaway.e47db4877ff44a7ed32d.png",
+    "static/media/blackweb.png": "/static/media/blackweb.a479d73aa7320f119071.png",
+    "static/media/bluegear.png": "/static/media/bluegear.3d40442ca51bb24987a5.png",
+    "static/media/web.png": "/static/media/web.98397dcb0bb7e659dc5f.png",
+    "index.html": "/index.html",
+    "main.f2697c8e.css.map": "/static/css/main.f2697c8e.css.map",
+    "main.c50ee069.js.map": "/static/js/main.c50ee069.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2697c8e.css",
+    "static/js/main.c50ee069.js"
+  ]
+}

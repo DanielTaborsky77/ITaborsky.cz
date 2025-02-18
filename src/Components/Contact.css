@@ -1,21 +1,24 @@
 .Contact{
-    padding-top: 110px;
+    padding-top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 110px;
+    padding-bottom: 110px;
+    background-color: #000000;
 }
 .Contact-Title {
+    color: #ffffff;
     font-family: 'Bold';
     font-size: 30px;
     text-align: center;
-    margin-bottom: 110px;
+    margin-bottom: 75px;
 }
 .Contact-Card {
     padding: 80px 80px;
     display: flex;
-    background-color: #07031A;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 50px #5abaf6;
     justify-content: space-between;
     width: 1000px;
 }
@@ -30,13 +33,13 @@
 .Contact-Card-Title {
     font-family: 'Bold';
     font-size: 35px;
-    color: #FFFFFF;
+    color: #000000;
     margin-bottom: 10px;
 }
 .Contact-Card-Subtitle {
     font-family: 'Regular';
     font-size: 30px;
-    color: #FFFFFF;
+    color: #000000;
 }
 .Contact-Card-Info {
     display: flex;
@@ -52,18 +55,18 @@
 .Contact-Card-Info a {
     font-family: 'Light';
     font-size: 23px;
-    color: #FFFFFF;
+    color: #000000;
 }
 .Contact-Card-Right img {
     height: 300px;
 }
 @media only screen and (max-width: 1950px) {
     .Contact{
-        padding-top: 100px;
+        padding-top: 50px;
     }
     .Contact-Title {
         font-size: 25px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     .Contact-Card {
         width: 850px;
@@ -91,10 +94,6 @@
     }
 }
 @media only screen and (max-width: 850px) {
-    .Contact{
-        padding-top: 75px;
-        margin-bottom: 0px;
-    }
     .Contact-Title {
         margin-bottom: 50px;
     }
@@ -112,5 +111,14 @@
     }
     .Contact-Card-Info p {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .Contact-Card-Left-Top {
+        text-align: center;
+    }
+    .Contact-Card-Info {
+        display: flex;
+        justify-content: center;
     }
 }

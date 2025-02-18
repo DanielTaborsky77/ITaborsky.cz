@@ -86,7 +86,7 @@ const transporter = nodemailer.createTransport({
   });
   
   // Spuštění serveru
-  const PORT = 3001;
+  const PORT = 8406;
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });

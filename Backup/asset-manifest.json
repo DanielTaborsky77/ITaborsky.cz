@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5d6b99b3.css",
+    "main.js": "/static/js/main.1aa6d50f.js",
+    "static/media/ITaborsky_FULL-STACK.pdf": "/static/media/ITaborsky_FULL-STACK.dc1b44de2a3542b69d7a.pdf",
+    "static/media/ITaborsky_Weby-a-aplikace.pdf": "/static/media/ITaborsky_Weby-a-aplikace.c3bd6409bf900ed5dd0f.pdf",
+    "static/media/ITaborsky_Webova-Sprava.pdf": "/static/media/ITaborsky_Webova-Sprava.4412befbe02444b3f889.pdf",
+    "static/media/ITaborsky_UI_UX-Design.pdf": "/static/media/ITaborsky_UI_UX-Design.e79e8cc23c69b6f180fe.pdf",
+    "static/media/icon.png": "/static/media/icon.223d75e5a92add7e399c.png",
+    "static/media/BellotaText-Bold.ttf": "/static/media/BellotaText-Bold.ad922308c622eb12c00c.ttf",
+    "static/media/BellotaText-Regular.ttf": "/static/media/BellotaText-Regular.53253e36d93a74b3fd96.ttf",
+    "static/media/BellotaText-Light.ttf": "/static/media/BellotaText-Light.509a4274b5b9b4fea707.ttf",
+    "static/media/me.webp": "/static/media/me.23d3d39f867790bec8b2.webp",
+    "static/media/rideaway.png": "/static/media/rideaway.e47db4877ff44a7ed32d.png",
+    "static/media/me2.webp": "/static/media/me2.73b3d14f1ccd6cb61d72.webp",
+    "static/media/myweb.png": "/static/media/myweb.4beefee2e194908b1b3b.png",
+    "index.html": "/index.html",
+    "main.5d6b99b3.css.map": "/static/css/main.5d6b99b3.css.map",
+    "main.1aa6d50f.js.map": "/static/js/main.1aa6d50f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d6b99b3.css",
+    "static/js/main.1aa6d50f.js"
+  ]
+}

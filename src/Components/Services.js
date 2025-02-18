@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import './Services.css';
 import './ServicesDetails.css';
 import ServicesCard from './ServicesCard';
@@ -10,19 +9,22 @@ import Logo from '../Assets/logo.png'
 import Tick from '../Assets/tick.png'
 import Redcross from '../Assets/redcross.png'
 
-import WFullStack from '../Assets/fullstack.png'
-import Wdesign from '../Assets/wdesign.png';
-import CodeService from '../Assets/codeservice.png';
-import Management from '../Assets/management.png';
-
+import BFullStack from '../Assets/bfullstack.png'
 import Bdesign from '../Assets/bdesign.png';
-import Bldesign from '../Assets/bldesign.png';
-
 import BCodeService from '../Assets/bcodeservice.png';
-import Whitecode from '../Assets/whitecode.png';
+import BManagement from '../Assets/blackmanagement.png';
 
+import WhiteCode from '../Assets/whitecode.png';
+import Wdesign from '../Assets/wdesign.png';
 import BlackManagement from '../Assets/blackmanagement.png';
+import BlueCode from '../Assets/bluecode.png';
 import WhiteGear from '../Assets/whitegear.png';
+import BlueGear from '../Assets/bluegear.png';
+
+import DesignPDF from '../Assets/Documents/ITaborsky_UI_UX-Design.pdf';
+import CodeServicePDF from '../Assets/Documents/ITaborsky_Weby-a-aplikace.pdf';
+import ManagementPDF from '../Assets/Documents/ITaborsky_Webova-Sprava.pdf';
+
 
 const Services = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,44 +56,40 @@ const Services = () => {
         <div className='Services' id='Services'>
             <p className='Services-Title'>Služby</p>
             <ServicesCard
-                Image={WFullStack}
+                Image={BFullStack}
                 Color={'#0B8BC9'}
                 Title={'FULL-STACK'}
-                Subtitle={'Design, Tvorba webu a Webová správa v jednom.'}
-                ButtonColor={'#FFFFFF'}
-                ButtontextColor={'#07031A'}
+                Subtitle={'Design, Tvorba webu a Webová správa v jednom'}
+                ButtontextColor={'#FFFFFF'}
                 handleButtonClick={handleButtonClick}
                 Link={'#FULL-STACK'}
             />
             <div className='Services-cards'>
                 <ServicesCard
-                    Image={Wdesign}
+                    Image={Bdesign}
                     Color={'#064D80'}
                     Title={'UI/UX Design'}
-                    Subtitle={'Přehlednost a atraktivnost stránky pro vaše zákazníky.'}
-                    ButtonColor={'#07031A'}
+                    Subtitle={'Grafický návrh webové stránky/aplikace'}
                     ButtontextColor={'#FFFFFF'}
                     handleButtonClick={handleButtonClick}
                     Link={'#UI/UX'}
                 />
                 {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} onSuccess={handleSuccess}/>}
                  <ServicesCard 
-                    Image={CodeService}
+                    Image={BCodeService}
                     Color={'#031F39'}
                     Title={'Weby a aplikace'}
-                    Subtitle={'Weby a webové aplikace na míru.'}
-                    ButtonColor={'#FFFFFF'}
-                    ButtontextColor={'#07031A'}
+                    Subtitle={'Weby a webové aplikace na míru vašemu podnikání'}
+                    ButtontextColor={'#FFFFFF'}
                     handleButtonClick={handleButtonClick}
                     Link={'#Web&Apps'}
                 />
                 {isModalOpen && <Demand title={selectedTitle} onClose={closeModal} onSuccess={handleSuccess}/>}
                 <ServicesCard 
-                    Image={Management}
+                    Image={BManagement}
                     Color={'#07031A'}
                     Title={'Webová správa'}
-                    Subtitle={'Udržování webů a aplikací v nejlepší kondici.'}
-                    ButtonColor={'#035799'}
+                    Subtitle={'Udržování webů a aplikací v nejlepší kondici'}
                     ButtontextColor={'#FFFFFF'}
                     handleButtonClick={handleButtonClick}
                     Link={'#Web-management'}
@@ -100,16 +98,16 @@ const Services = () => {
             </div>
             {showSuccessModal && (
                 <div className="Modal">
-                    <img className='Modal-Logo' src={Logo} alt="" />
-                    <p>Vaše poptávka byla úspěšně odeslána</p>
-                    <img className='Success-Modal-Tick' src={Tick} alt="" />
+                    <img className='Modal-Logo' src={Logo} alt="Logo" loading="lazy"/>
+                    <p>Vaše žádost byla úspěšně odeslána</p>
+                    <img className='Success-Modal-Tick' src={Tick} alt="Úspěch" loading="lazy"/>
                 </div>
             )}
             {showErrorModal && (
                 <div className="Modal">
-                    <img className='Modal-Logo' src={Logo} alt="" />
+                    <img className='Modal-Logo' src={Logo} alt="Logo" loading="lazy"/>
                     <p>Nastala chyba v odesílání</p>
-                    <img className='Error-Modal-Cross' src={Redcross} alt="" />
+                    <img className='Error-Modal-Cross' src={Redcross} alt="Error" loading="lazy"/>
                 </div>
             )}
             <FullStack 
@@ -122,65 +120,56 @@ const Services = () => {
                 LeftTitleImg={Bdesign}
                 LeftTitle={'UI/UX Design'}
                 LeftParagraphs={[
-                    'UI/UX design představuje v současnosti klíčový a zcela nezbytný aspekt vývoje každé webové stránky či aplikace. ', 
-                    'Dalo by se i říci že UI/UX Design je takový průvodce webovou stránkou. Ukáže a řekne zákazníkovi přesně to co chcete.',
-                    'Uživatel, potenciální zákazník, by měl být schopen se orientovat ve webovém rozhraní, i když s ním přichází poprvé do kontaktu.',
-                    'Současně musí design vizuálně odpovídat profesionálním standardům a esteticky reprezentovat vaši značku, ať už se jedná o společnost, podnikatele, umělce, ...',
+                    "Vizuálně poutavý a zároveň uživatelsky přívětivý web je jednou z nejdůležitějších součástí Vašeho marketingu a prezentace Vaší značky.",
+                    'Nepodceňte ji...'
                 ]}
                 handleButtonClick={handleButtonClick}
                 ButtonColor={'#064D80'}
                 ButtonImg={Wdesign}
-                ButtonText={'Poptat UI/IX Design'}
-                RightColor={'#064D80'}
-                RightTitleImg={Bldesign}
+                ButtonText={'Zažádat o UI/IX Design'}
+                RightColor={'#064D80ee'}
+                RightTitleImg={Bdesign}
                 RightTitle={'Jak to probíhá?'}
-                RightParagraphTitleImg={Wdesign}
+                RightParagraphTitleImg={Bdesign}
                 RightParagraphsTitles={[
                     'Úvodní konzultace',
-                    'Návrh struktury',
-                    'UI Design',
-                    'Předání návrhů'
+                    'Návrh struktury projektu',
+                    'Tvorba detailních návrhů',
+                    'Kompletní předání'
                 ]}
                 RightParagraphs={[
-                    'Probereme Vaší představu, cíle webu, přibližnou strukturu a cílové uživatele. Zároveň se podíváme na inspirace, barevné schéma, typografii a další vizuální prvky. Na závěr se dohodneme na rozsahu projektu, časovém harmonogramu a ceně.',
-                    'Navrhnu rozložení prvků na jednotlivých stránkách webu. Na základě vaší zpětné vazby provedu patřičné úpravy.',
-                    'Dle Vámi schválené struktury a rozvržení udělám detailní grafický návrh jak pro počítačové tak i pro mobilní zařízení, který budu s Vámi postupně konzultovat.',
-                    'Při poslední konzultaci a po doplacení Vám budou předány všechny vytvořené grafické návrhy a výstupy.'
+
                 ]}
+                PDFFile={DesignPDF}
             />
             <ServicesDetails 
                 ServicesDetailsId='Web&Apps'
-                Orientation={'Right'}
+                Orientation={'Left'}
                 LeftTitleImg={BCodeService}
                 LeftTitle={'Weby a aplikace'}
                 LeftParagraphs={[
-                    'Webové stránky a webové aplikace slouží k prezentaci informací, služeb nebo produktů na internetu.', 
-                    'Jsou klíčovým nástrojem pro komunikaci se zákazníky, umožňují budování značky a zvyšování viditelnosti online.',
-                    'Mohou fungovat jako virtuální vizitka, e-shop, blog nebo nástroj pro poskytování služeb.',
-                    'Je důležité aby webové stránky a aplikace byli responzivní na všechny typy zařízení od klasického desktopu až po malý telefon ve Vaší kapse, na kterém Vás lidé častokrát vyhledávají ještě více.',
+                    'Bez webové stránky nebo aplikace se v dnešní digitální době jen zřídka obejdete a pro podnikatele může být jejich tvorba náročná, obzvláště pokud má obsahovat náročnější funkce a vypadat podle jejich představ.',
+                    'V připadě potřeby webového vývoje se můžete obrátit na mne...'
                 ]}
                 handleButtonClick={handleButtonClick}
                 ButtonColor={'#031F39'}
-                ButtonImg={Whitecode}
-                ButtonText={'Poptat Weby a aplikace'}
+                ButtonImg={WhiteCode}
+                ButtonText={'Zažádat o Weby a aplikace'}
                 RightColor={'#031F39'}
-                RightTitleImg={CodeService}
+                RightTitleImg={BCodeService}
                 RightTitle={'Jak to probíhá?'}
-                RightParagraphTitleImg={Whitecode}
+                RightParagraphTitleImg={BlueCode}
                 RightParagraphsTitles={[
                     'Analýza návrhu',
-                    'Front-end',
-                    'Integrace Back-endu',
+                    'Uživatelské rozhraní (Front-end)',
+                    'Integrace funkcí (Back-end)',
                     'Testování a ladění',
                     'Předání a spuštění'
                 ]}
                 RightParagraphs={[
-                    'Projdeme předvytvořený návrh kousek po kousku. Řeknete mi Vaší představu o funkcích webu, Vaše technické požadavky popřípadě detaily k designu. Ná základě toho analyzuji jaká technologie je nejvhodnější pro tvorbu Vašeho projektu.',
-                    'Naprogramuji Front-endovou část aplikace, dle prodiskutovaného návrhu. Na předem dohodnutých schůzkách Vám bude postupně předvedena provedená práce.',
-                    'Po dokončení front-endu, začnu integrovat jednotlivé funkcionality - připojení databáze, API, CMS systém a další... ',
-                    'Projekt otestuji na různých typech zařízení a webových prohližečích. Doladím nedokonalosti jak designu, tak funkcí.',
-                    'Po dokončení vývoje, Vašem schválení a doplacení domluvené částky, spustím web na webhostingu a předám Vám celý projekt popřípadě i technickou dokumentaci.',
+                
                 ]}
+                PDFFile={CodeServicePDF}
             />
             <ServicesDetails
                 ServicesDetailsId='Web-management'
@@ -188,39 +177,35 @@ const Services = () => {
                 LeftTitleImg={BlackManagement}
                 LeftTitle={'Webová správa'}
                 LeftParagraphs={[
-                    'Webová správa je proces, který zajišťuje efektivní fungování, údržbu a optimalizaci webových stránek.', 
-                    'Cílem je nejen zajistit, aby stránky byly dostupné, aktuální a technicky bezchybné, ale také přinášely uživatelům hodnotný obsah a dobrou uživatelskou zkušenost.',
-                    'Tato činnost zahrnuje pravidelnou kontrolu webových stránek, zajištění bezpečnosti, optimalizaci pro vyhledávače, aktualizaci obsahu a mnoho dalšího...',
-                    'V dnešní digitální době je správa webu klíčová pro úspěch jakékoliv online přítomnosti – od malých osobních blogů po rozsáhlé korporátní weby.'
+                    'Máte už nádherně vypadající a uživatelsky přívětivé webové stránky, ale za nějakou dobu budou ztrácet na popularitě, návštěvnosti, bezpečnosti. Budete potřebovat přidat nějaký obsah a udržet tím stránky aktuální.',
+                    'Pokud chcete své webové stránky udržet živé a nestárnoucí, rád Vám s tím pomohu.'
                 ]}
                 handleButtonClick={handleButtonClick}
                 ButtonColor={'#07031A'}
                 ButtonImg={WhiteGear}
-                ButtonText={'Poptat Webovou správu'}
+                ButtonText={'Zažádat o Webovou správu'}
                 RightColor={'#07031A'}
-                RightTitleImg={Management}
+                RightTitleImg={BManagement}
                 RightTitle={'Jak to probíhá?'}
-                RightParagraphTitleImg={WhiteGear}
+                RightParagraphTitleImg={BlueGear}
                 RightParagraphsTitles={[
-                    'Průzkum webové stránky',
-                    'Měsíční správa',
-                    'Urgentní řešení',
+                    'Průzkum stránky/aplikace',
+                    'Pravidelná měsíční údržba',
+                    'Zaslání reportu zákazníkovi',
+                    'Urgentní řešení problému',
                 ]}
-                RightParagraphs={[
-                    'Pokud webové stránky nebyli vytvářeny mnou je potřeba abych si je prostudoval a zjistil na jaké technologii jsou postaveny a jak pracují jednotlivé funkcionality. Poté mohu web začít plně spravovat.',
-                    '',
-                    'V případě kritického problému na webové stránce zajistím jeho nápravu s maximální možnou rychlostí a efektivitou.',
-                ]}
+                RightParagraphs={[]}
                 RightSubtitlesTitle={'Měsíční správa'}
                 RightSubtitles={[
-                    'Kontrola bezpečnostních hrozeb',
-                    'Optimalizace pro vyhledávače',
-                    'Sledování výkonu, návštěvnosti a chování uživatelů',
-                    'Oprava chyb',
-                    'Aktualizace obsahu',
-                    'Implementace nových prvků a funkcí',
-                    'Obeznámení zákazníka o průběhu kontroly a provedených změnách'
+                    '1) Kontrola bezpečnostních hrozeb',
+                    '2) Optimalizace pro vyhledávače',
+                    '3) Sledování výkonu, návštěvnosti a chování uživatelů',
+                    '4) Oprava chyb',
+                    '5) Aktualizace obsahu',
+                    '6) Implementace nových prvků a funkcí',
+                    '7) Obeznámení zákazníka o průběhu kontroly a provedených změnách'
                 ]}
+                PDFFile={ManagementPDF}
             />
         </div>
     )

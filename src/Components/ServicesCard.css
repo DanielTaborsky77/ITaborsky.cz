@@ -1,35 +1,34 @@
 .ServicesCard {
-    width: 430px;
-    min-height: 400px;
-    padding: 50px 80px;
+    width: 550px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 25px 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-.Full-Stack-Card {
-    width: 500px;
-}
 .ServicesCard img {
     height: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: all 0.8 ease;
+    flex-shrink: 0;
 }
 .ServicesCard-Title {
     font-family: 'Bold';
     font-size: 30px;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+    color: #000000;
+    margin-bottom: 20px;
 }
 .ServicesCard-Subtitle{
     text-align: center;
     font-family: "Light";
     font-size: 23px;
-    color: #FFFFFF;
+    color: #000000;
     height: 60px;
 }
 .ServicesCard-Button {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 225px;
     font-size: 20px;
     font-family: 'Regular';
@@ -46,15 +45,12 @@
     margin-top: 10px;
     font-family: 'Regular';
     font-size: 20px;
-    color: #FFFFFF;
+    color: #000000;
 }
-
-
 @media only screen and (max-width: 1950px) {
     .ServicesCard {
-        width: 350px;
-        min-height: 350px;
-        padding: 30px 50px;
+        width: 425px;
+        padding: 30px 70px;
     }
     .ServicesCard img {
         height: 40px;
@@ -77,23 +73,23 @@
         margin-top: 5px;
         font-family: 'Regular';
         font-size: 18px;
-        color: #FFFFFF;
     }
 }
-@media only screen and (max-width: 1460px){
+@media only screen and (max-width: 1600px){
     .ServicesCard {
-        margin-top: 50px;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 550px) {
     .ServicesCard {
-        width: 99%;
+        width: 90%;
         height: auto;
+        padding: 30px 80px;
     }
     .ServicesCard-Title {
         text-align: center;
         font-size: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .ServicesCard-Button {
         margin-top: 20px;
@@ -104,7 +100,17 @@
 }
 @media only screen and (max-width: 450px) {
     .ServicesCard {
+        width: 100%;
         height: auto;
-        padding: 50px 30px;
+    }
+    .ServicesCard {
+        height: auto;
+        padding: 20px 30px;
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .ServicesCard {
+        padding: 30px 20px;
     }
 }

@@ -1,16 +1,17 @@
 .Aboutme {
+    padding-top: 75px;
+    padding-bottom: 75px;
     width: 100%;
     height: auto;
-    background-color: #010103;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #000000;
 }
 /*Title*/
 .Aboutme-Title {
-    margin-top: 110px;
+    margin-bottom: 50px;
     display: block;
-    position: absolute;
     font-family: bold;
     color: #ffffff;
     font-size: 30px;
@@ -19,39 +20,29 @@
 .Aboutme-content {
     display: flex;
     width: 100%;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
 }
 /*Left side*/
 .Aboutme-Left {
-    width: 1000px;
+    width: 850px;
     margin-left: 112px;
 }
 .Aboutme-Paragraph {
     color: #ffffff;
-    font-family: 'Light';
+    font-family: 'Regular';
     font-size: 25px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
-/*Right side*/
-.Aboutme-Right {
-    padding: 200px;
-    width: 1000px;
-    height: auto;
-    background-color: #ffffff;
+.Aboutme-Buttons{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50000px 0px 0px 50000px;
 }
-.Aboutme-Photo {
-    width: 400px;
-    margin-bottom: 100px;
-}
-.Aboutme-Right a {
+.Aboutme-Left a {
     text-decoration: none;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 7px;
 }
 .Aboutme-Portfolio-Button img{
     margin-right: 25px;
@@ -62,19 +53,20 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s ease-in-out;
-    background-color: #3098C5;
-    color: #ffffff;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 20px #3098C5;
+    color: #000000;
     font-family: 'Bold';
-    padding: 10px;
+    padding: 7px;
     font-size: 21px;
     width: 200px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .Aboutme-Portfolio-Button:hover {
     transform: scale(1.1);
@@ -84,10 +76,11 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s ease-in-out;
-    background-color: #031F39;
-    color: #ffffff;
+    box-shadow: 3px 3px 20px #0084ff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Bold';
-    padding: 10px;
+    padding: 7px;
     font-size: 21px;
     width: 200px;
     border: none;
@@ -105,7 +98,29 @@
 .Aboutme-Services-Button:hover {
     transform: scale(1.1);
 }
+/*Right side*/
+.Aboutme-Right {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50000px 0px 0px 50000px;
+}
+.Aboutme-Photo {
+    width: 400px;
+}
+@media only screen and (max-width: 2150px) {
+    .Aboutme-Right {
+        width: 40%; 
+    }
+}
 @media only screen and (max-width: 1950px){
+    .Aboutme {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .Aboutme-Title {
         font-size: 25px;
     }
@@ -123,27 +138,30 @@
     }
     .Aboutme-Photo {
         width: 300px;
-        margin-bottom: 80px;
     }
     .Aboutme-Portfolio-Button {
         width: 180px;
-        padding: 10px;
+        padding: 7px;
         font-size: 20px;
     }
     .Aboutme-Services-Button {
         width: 180px;
-        padding: 10px;
+        padding: 7px;
         font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .Aboutme-Left {
+        width: 650px;
+        margin-left: 100px;
     }
 }
 @media only screen and (max-width: 1600px){
     .Aboutme-Title {
-        margin-top: 100px;
         font-size: 25px;
     }
     .Aboutme-Left {
         width: 700px;
-        margin-left: 60px;
     }
     .Aboutme-Paragraph {
         font-size: 20px;
@@ -153,81 +171,78 @@
     }
     .Aboutme-Photo {
         width: 300px;
-        margin-bottom: 80px;
     }
     .Aboutme-Portfolio-Button {
         width: 180px;
-        padding: 10px;
         font-size: 20px;
     }
     .Aboutme-Services-Button {
         width: 180px;
-        padding: 10px;
         font-size: 20px;
     }
 }
-@media only screen and (max-width: 2150px) {
-    .Aboutme-Right {
-        width: 40%; 
-    }
-}
-@media only screen and (max-width: 1700px) {
-    .Aboutme-Left {
-        width: 650px;
-        margin-left: 100px;
-    }
-}
+
+
 @media only screen and (max-width: 1350px) {
     .Aboutme-content {
         flex-direction: column;
+        align-items: center;
     }
     .Aboutme-Title {
         position: relative;
         top: 0;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
+    }
+    .Aboutme-Paragraph {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .Aboutme-Left {
-        width: 800px;
+        display: flex;
+        flex-direction: column;
+        width: 700px;
         margin-left: 0px;
-        margin-bottom: 50px;
+    }
+    .Aboutme-Buttons {
+        margin-top: 20px;
     }
     .Aboutme-Right {
+        margin-top: 35px;
         width: 100%;
         border-radius: 0px 0px 0px 0px;
-        padding: 100px;
     }
 }
-@media only screen and (max-width: 900px) {
-    .Aboutme-Left {
-        width: 700px;
-    }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .Aboutme-Left {
         width: 600px;
     }
-}
-@media only screen and (max-width: 700px) {
-    .Aboutme-Left {
-        width: 500px;
+    .Aboutme-Services-Button {
+        margin-bottom: 35px;
+    }
+    .Aboutme-Right {
+        margin-top: 20px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
+    .Aboutme-Title {
+        margin-bottom: 20px;
+    }
     .Aboutme-Left {
         width: 85%;
     }
-    .Aboutme-Paragraph {
-        margin-bottom: 25px;
-        margin-top: 25px;
+    .Aboutme-Buttons {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Aboutme-Portfolio-Button {
+        margin-bottom: 10px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
 @media only screen and (max-width: 500px) {
     .Aboutme-Photo {
         width: 250px;
-        margin-bottom: 50px;
-    }
-    .Aboutme-Portfolio-Button {
-        margin-bottom: 25px
     }
 }

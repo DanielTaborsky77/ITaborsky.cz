@@ -26,19 +26,19 @@ const PortfolioCard = (props) => {
                 }}
             >
                 <div className='PortfolioCard-Container-Image'>
-                    <img className='PortfolioCard-Image' src={props.Img} alt="" />
+                    <img className='PortfolioCard-Image' src={props.Img} alt="Logo" loading="lazy"/>
                 </div>
                 <p className='PortfolioCard-Title'>{props.Title}</p>
                 <p className='PortfolioCard-Description'>{props.Description}</p>
                 <a className='PortfolioCard-a-Web' href={props.Web} target="_blank" onClick={(e) => { e.stopPropagation();}}> 
                     <button className='PortfolioCard-Web'>
-                        <img className='PortfolioCard-Web-Img' src={WebImg} alt="Web" />
+                        <img className='PortfolioCard-Web-Img' src={WebImg} alt="Web_page_logo" loading="lazy"/>
                         Web
                     </button>
                 </a>                
                 <a className='PortfolioCard-a-Git' href={props.Github} target="_blank" onClick={(e) => { e.stopPropagation();}}>
                     <button className='PortfolioCard-Git'>
-                        <img className='PortfolioCard-Git-Img' src={BGitHub} alt="Git" />
+                        <img className='PortfolioCard-Git-Img' src={BGitHub} alt="Github_logo" loading="lazy"/>
                         Github
                     </button>
                 </a>

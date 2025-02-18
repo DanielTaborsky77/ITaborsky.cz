@@ -44,7 +44,7 @@ const Demand = ({ title, onClose, onSuccess }) => {
     onSubmit: async (values) => {
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:3001/send-email', {
+        const response = await fetch('https://send-email-4illabtotq-uc.a.run.app', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ const Demand = ({ title, onClose, onSuccess }) => {
             <button className="Demand-Close-Button" onClick={onClose}>
               &times;
             </button>
-            <p className='Demand-Title'>Poptávka</p>
+            <p className='Demand-Title'>Nezávazná žádost</p>
             <form onSubmit={handleSubmit} className='Demand-Form'>
               <div className='Demand-Duo'>
                 <div className='Demand-Group'>
@@ -182,7 +182,7 @@ const Demand = ({ title, onClose, onSuccess }) => {
                 {errors.description && touched.description && <p className="error">{errors.description}</p>}
               </div>
               <div className='Demand-Submit'>
-                <input className='Demand-Submit-Button' type="submit" value='Poptat službu' />
+                <input className='Demand-Submit-Button' type="submit" value='Nezávazně zažádat' />
               </div>
             </form>
           </motion.div>
